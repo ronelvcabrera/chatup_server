@@ -108,7 +108,6 @@
 						message: `${this.username} has joined`
 					});
 					socket.on('NEW_MESSAGE', function (message) {
-						console.log(message);
 						app.messages.push(message);
 					})
 					// this needs to be done AFTER vue updates the page!!
